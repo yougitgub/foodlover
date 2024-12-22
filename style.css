@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+* a{
+    cursor: pointer;
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(50%);
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -19%;
+}
+
+nav img{
+    filter: brightness(100%);
+    position: relative;
+    display: inline;
+    width: 150px;   
+    height: 150px;
+
+}
+
+nav ul{
+    margin-left: -6.5%;
+    display: inline;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    gap: 5%;
+    font-size: 25px;
+}
+
+ul li:hover{
+    border-bottom: 2px solid  rgb(168, 168, 23);
+    cursor: pointer;
+    transition: 1000ms;
+}
+
+.content{
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin-top: 10%;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+header .content p{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-size: 25px;
+    color: wheat;
+}
+
+header .content a{
+    text-decoration: none;
+    color: white;
+    border:2px solid  rgb(168, 168, 23);
+    padding: 20px;
+    border-radius:15px;
+    
+}
+
+span{
+    color: rgb(168, 168, 23);
+}
+
+#about{
+    background-color: gainsboro;
+    z-index: 1;
+    position: relative;
+}
+
+#about .container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#about .container h2{
+    margin-top: -1%;
+    padding-top: 5%;
+    text-align: center;
+    font-size: 40px;
+}
+#about .container p{
+    margin-top:2% ;
+    text-align: center;
+    color: gray;
+    height: 100%;
+    width: 100%;
+    position: static;
+}
+
+#about .content{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#about img{
+    margin-top: 5%;
+    padding-bottom: 5%;
+    width: 80%;
+}
+
+#about .content .text{
+    text-align: left;
+    margin-right: 5%;
+    width: 30%;
+    padding-bottom: 10%;
+
+}
+#about .content p{
+   text-align: left;
+   line-height: 250%;
+   margin-bottom: 5%;
+}
+
+#about .content a{
+    position: absolute;
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+    background-color:#383848;
+    border-radius: 10px;
+}
+
+#offer{
+  
+    color:white;
+    height: 700px;
+
+    padding-top:2% ;
+    background:url('images/offer-background.jpg') center center/cover fixed ;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 3%;
+    z-index: -1;
+}
+#offer .title{
+    width: 100%;
+    text-align: center;
+}
+#offer .title h2{
+    font-size: 40px;
+    color: goldenrod;
+    
+}
+#offer .title p{
+    color: gray;
+    
+}
+#offer .imgs{
+    margin-top: 5%;
+    text-align: center;
+
+}
+#offer b{
+    margin-left: 1%;
+    color: goldenrod;
+}
+#offer .ssc{
+    display: flex;
+    gap: 5%;
+}
+#offer .ssc:hover{
+    cursor: pointer;
+}
+#offer .s1{
+    width: 1px;
+    padding:10px ;
+    background-color: gainsboro;
+    border-radius: 15px;
+}
+#offer .s1:hover,#offer .s2:hover, #offer .s3:hover{
+    background-color: darkgray;
+}
+#offer .s2{
+    
+    width: 1px;
+    padding:10px ;
+    background-color: gainsboro;
+    border-radius: 15px;
+}
+#offer .s3{
+   
+    width: 1px;
+    padding:10px ;
+    background-color: gainsboro;
+    border-radius: 15px;
+}
+#menu{
+    width: 100%;
+    height:max-content;
+    padding-bottom: 50px;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu .title{
+    margin-top: 2%;
+    width: 100%;
+    text-align: center;
+}
+#menu .title h2{
+    
+    margin-top: 0;
+    font-size: 40px;
+}
+#menu .ts h2{
+    display: inline;
+}
+#menu .title p{
+    display: inline;
+    color: gray;
+}
+#menu .ts .price{
+
+    width: fit-content;
+}
+
+#menu .menu{
+    margin-top: 5%;
+    margin-left: 25%;
+    height: 100%;
+    width: 85%;
+   display: grid;
+   grid-template-columns: repeat(auto-fill,minmax(800px,auto));
+   justify-content: space-evenly;
+   gap: 0.5%;
+}
+@media only screen and (max-width:500px) {
+    #menu .menu{
+        margin-left: -15%;
+        margin-top: -5%;
+        padding-bottom: 5%;
+    }
+    
+}
+@media only screen and (max-width:1660px) {
+    #menu .menu{
+ 
+        padding-bottom: 5%;
+    }
+    
+}
+
+#menu .items{
+    margin:5% 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 4%;
+}
+#menu .items img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+#menu .tp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#menu .fonts .ts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#menu .price{
+    display: inline;
+    margin-top: 2%;
+    margin-left: 2%;
+    color: goldenrod;
+}
+#menu hr{
+    width: 300px;
+    margin: 2% 0;
+    border-style: dashed;
+    border-color: gray ;
+}
+
+
+#day-time{
+    background: url('images/daytime_bg.jpeg') center center/cover fixed;
+}
+#day-time .container{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    padding: 1% 0;
+} 
+
+#gallery{
+    text-align: center;
+    display: flex;
+    background: url('images/offer-background.jpg') center center/cover fixed;
+    color:white;
+    padding-bottom: 5%;
+}
+@media only screen and (max-width:1070px) {
+    #gallery{
+        padding-bottom: 70%;
+        
+    }
+    /* #gallery h2{
+        margin-top: -35%;
+    }
+    #gallery #images{
+        margin-left: -55%;
+    } */
+}
+
+#gallery h2{
+    font-size: 40px;
+    margin: 3% 0;
+   color: white;
+}
+#gallery #images{
+    display: grid;
+    width: 45%;
+    grid-template-columns: repeat(auto-fill,minmax(250px,auto));
+    margin-left: 29%;
+    gap: 5%;
+    height: 60%;
+}
+#gallery img{
+    opacity: 0.5;
+    width: 100%;
+    height: 80%;
+    border-radius: 15px;
+}
+#gallery img:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+#contact{
+    padding-top: 2%;
+    width: 100%;
+    background-color: gainsboro;
+}
+
+#contact p{
+    color: gray;
+}
+
+#contact .container{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#contact .container .info .ips *{
+    display: inline;
+}
+#contact .container .info .ips{
+    margin-top: 2%;
+}
+#contact .container .info .title{
+    margin-bottom: 15%;
+}
+#contact .container .info .sub1{
+    font-size: 30px;
+    margin: 15% 0;
+}
+#contact .container .info .sub2{
+    margin: 15% 0;
+}
+#contact .container .info .ips img{
+    margin-top: 1%;
+    width: 20px;
+    height: 20px;
+}
+#contact .form{
+    width: 50%;
+}
+
+#contact input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    margin: 2% 0;
+}
+textarea{
+    height: 120px;
+    width: 100%;
+}
+#contact .submit{
+    text-align: center;
+    text-shadow: 2px;
+    color:white;
+    text-align: center;
+    width: 30%;
+    border-radius:15px ;
+    border: solid goldenrod 2px;
+    background-color: goldenrod;
+}
+footer{
+    text-align: center;
+    color:white;
+    padding: 25px 0;
+    background: url('images/offer-background.jpg') center center/cover fixed;
+}
